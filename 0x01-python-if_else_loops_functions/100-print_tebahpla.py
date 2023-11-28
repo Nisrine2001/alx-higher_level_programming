@@ -4,4 +4,3 @@ for alphabet in range(25, -1, -1):
     if alphabet % 2 == 1:
         c += 32
     print("{:c}".format(c), end="")
-
