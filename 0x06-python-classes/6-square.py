@@ -3,27 +3,20 @@
 
 
 class Square:
-    """Define a square."""
+    """Represent a square."""
 
     def __init__(self, size=0, position=(0, 0)):
-        """Constractor new square.
-
+        """Initialize a new square.
         Args:
-            size: Size of new square.
+            size (int): The size of the new square.
             position (int, int): The position of the new square.
         """
         self.size = size
         self.position = position
 
-
     @property
     def size(self):
-        """Property for the size of the new square.
-
-        Raises:
-          TypeError: If the size is not an integer.
-          ValueError: If the size is less than 0.
-        """
+        """Get/set the current size of the square."""
         return (self.__size)
 
     @size.setter
